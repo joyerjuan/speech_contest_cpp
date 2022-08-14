@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_CXX_STANDARD 11)
+project(speech_juanjuan)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+#aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/src cppList)
+link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
+add_executable(speech_juan  main.cpp ${cppList})
+target_link_libraries(speech_juan speechlib)

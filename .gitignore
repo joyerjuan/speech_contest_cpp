@@ -31,3 +31,7 @@
 *.out
 *.app
 build/
+create_lib/build/
+use_lib/build/
+use_lib/lib/*.so
+
